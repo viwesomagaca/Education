@@ -1,27 +1,35 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Login from './pages/login';
 import Register from './pages/register';
 import Home from './pages/home';
-import LandingPage from './pages/landingPage';
-/* Route path="*" exact component={Nav} */
+import Register_School from './pages/register_school';
+import Landing from './pages/confirmation';
 
-class App extends Component {
-  
 
-      render(){
-      
-      return(
-        <div>
-        <Router>
-                <Route path="/login" exact component={Login} />
-                <Route path="/register" exact component={Register} />
-                <Route path="/home" exact component={Home} />
-                <Route path="/" exact component={LandingPage} />
-                </Router>
-        </div>
-      
-      )};
-}
+export default class App extends Component {
+
+
+  render() {
+    const token = localStorage.getItem("token");
     
-export default App;
+    return (
+
+    <Router>
+      <div>
+        <Route path="/home" exact component = {Home}/>
+        <Route path="/application" exact component = {Register_School}/>
+        <Route path ="/" exact component = {Login}/>
+        <Route path ="/confirmation/:token" exact component = {Landing}/>
+        <Route path ="/register" exact component = {Register}/>
+      </div>   
+  </Router>
+    )
+  }
+}
+
+    // SET TOKEN IN LOCAL STORAGE
+// localStorage.setItem("token", "YOURTOKENHERE")
+
+// GET TOKEN FROM LOCALSTORAGE
+// const token = localStorage.getItem("token")

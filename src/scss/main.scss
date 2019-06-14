@@ -1,0 +1,53 @@
+.outer_container{
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+}
+
+.inner_container{
+    position: absolute;
+    padding: 20px;
+    width: 35%;
+    background-color: rgba(247, 239, 239, 0.961)
+ }
+
+Link{
+    background-color: blue;
+    color: white;
+    width: 30px;
+    height: 20px;
+}
+
+.wrapper{
+overflow: hidden;  
+    height: 150px;
+}
+
+.nav{
+    width: 100vw;
+    height: 50px;
+    background: green;
+    position: fixed;
+}
+
+.icon{
+    position: fixed;
+    top:10px;
+    left: 12px;
+}
+
+.nav-link{
+ list-style: none;
+ position: fixed;
+ right: 0;
+}
+
+li{
+    display: inline;
+    color: white;
+    margin: 0 24px;
+}
