@@ -7,7 +7,7 @@ export default class register extends Component {
      email: '',
      password:'',
      confirm_password:'',
-     sucess: false,
+     success: false,
      response:[],
      error: null
    }
