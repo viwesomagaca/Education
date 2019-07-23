@@ -5,6 +5,7 @@ import Register from './pages/register';
 import Home from './pages/home';
 import Register_School from './pages/register_school';
 import Landing from './pages/confirmation';
+import About from './pages/about';
 
 
 export default class App extends Component {
@@ -22,6 +23,7 @@ export default class App extends Component {
         <Route path ="/" exact component = {Login}/>
         <Route path ="/confirmation/:token" exact component = {Landing}/>
         <Route path ="/register" exact component = {Register}/>
+        <Route path ="/about" exact component = {About}/>
       </div>   
   </Router>
     )

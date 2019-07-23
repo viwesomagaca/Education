@@ -29,13 +29,20 @@ export default class home extends Component {
          <p className="icon">DIGITAL EDUCARE</p>
 
          <ul className='nav-link'>
-         <li>About Us</li>
-         <li>Donate</li>
-         <li>LOG OUT</li>
+         <li><a href="/about">About us</a></li>
+         <li><a href="#">Donate</a></li>
+         <li><a href="#"> LOG OUT </a></li>
          </ul>
         </div>
 
+        <div className="outer_container light-grey">
+         <div className="inner_container"> 
+           <p>DIGITAL EDUCATION </p>
+         </div>
+        </div>
+
         <h1>School Stats</h1>
+        <div className="container">
         <table className="table">
         <thead>
         <tr>
@@ -75,6 +82,7 @@ export default class home extends Component {
         } 
         </tbody>
         </table>
+        </div>
       </div>
     )
   }

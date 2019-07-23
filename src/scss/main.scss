@@ -15,11 +15,24 @@
     background-color: rgba(247, 239, 239, 0.961)
  }
 
+ .light-grey{
+     background-color: lightgray;
+ }
+
 Link{
     background-color: blue;
     color: white;
     width: 30px;
     height: 20px;
+}
+
+a{
+    background-color: lightgray;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .wrapper{
@@ -29,7 +42,7 @@ overflow: hidden;
 
 .nav{
     width: 100vw;
-    height: 50px;
+    height: 70px;
     background: green;
     position: fixed;
 }
